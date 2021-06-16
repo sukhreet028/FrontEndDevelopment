@@ -82,7 +82,7 @@ nav ul li a {
 }
 nav ul li:hover .contactList{
    display: block; 
-  /* position: absolute; */
+  position: relative;  
   background-color: white;
   margin-top: 10px;
   margin-left: -30px;
@@ -90,12 +90,12 @@ nav ul li:hover .contactList{
 nav ul li:hover .contactList ul{
   display: block;
 }
-nav ul li:hover .contactList ul li{
-  width: 120px;
-  border: none;
-  padding: 5px;
-  border: 2px solid black;
-}
+/* nav ul li:hover .contactList ul li{ */
+  /* width: 120px; */
+  /* border: none; */
+  /* padding: 5px; */
+  /* border: 2px solid black; */
+/* } */
 .body0{
     height:350px;
     width: 100%;
@@ -441,3 +441,74 @@ cursor: pointer;
   /* color:white; */
   /* cursor: pointer; */
 /* } */
+
+
+/*FOOTERRRRRRRR
+.sign-up
+{
+    height:600px;
+    width: 100%; 
+}*/
+.signUp-container{
+    height: 400px;
+    width: 88%;
+    margin: 1px auto;
+    background-color:black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+     padding-top: 150px;
+     padding: 15px;
+     border:1px solid white;
+}
+.signUp1{
+    width: 25%;
+    height: 300px;
+     /* background-color: green;  */
+    /* padding: 0%; */
+    color: white;
+    margin-left:20px;
+}
+.signUp1 h1{ 
+font-family: 'Roboto', sans-serif; 
+ font-family: 'Wallpoet', cursive; 
+}
+.signUp2{
+width: 15%;
+height: 300px;
+background-color: black; 
+font-family: 'Roboto', sans-serif;
+}
+ .signUp2 h4{
+color: #868b59;
+ }
+.signUp2 p{
+color:white;
+}
+.signUp4{
+width: 40%;
+ height: 300px;
+}
+.signUp4-icon{
+color: white;
+}
+.fa{
+color:white;
+padding-right:10px;
+}
+.sinput{
+ height: 30px;
+ width: 250px;
+border: black;
+margin-top: 50px;
+border-bottom: 2px solid gray;
+background-color: black;
+color:white;
+}
+.signbtn{
+background-color: red;
+width: 90px;
+height: 35px;
+color:white;
+border: none; 
+}
