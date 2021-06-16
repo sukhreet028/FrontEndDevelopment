@@ -1,0 +1,23 @@
+.logIn{
+    height: 500px;
+    width: 30%;
+    margin: auto;
+    background-color: white;
+}
+.sukhi{
+    padding: 188px 0px 160px 110px;
+    font-family: sans-serif;
+}
+.sukhi button{
+height: 34px;
+width: 180px;
+background-color: rgb(63, 63, 230);
+color:white;
+border-radius: 5px;
+font-size: 18px;
+}
+button:hover
+{
+cursor: pointer;
+background-color: #4545fd;
+}
