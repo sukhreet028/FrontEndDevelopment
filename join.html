@@ -1,40 +1,48 @@
 <html>
-    <head>
-        <title>Join Now</title>
-        <link rel="stylesheet" href="join.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <form method="POST" target="_blank">
-        <div class="wrapperJ"> 
-              <div class="containerJ">
-                  <br>
-                  <form method="POST" target="_blank" autocomplete="off" >
-            <label for="fname">First name<label><br>
-            <input type="text"  name="fname" required>
-            <br><br>
-            <label for="lname">Last name</label><br>
-            <input type="text"  name="lname" required>
-            <br><br>
-            <label for="email">Email</label><br>
-           <input type="email" id="email" required>
-            <br><br>
-            <label for="pswd">Password(6 or more character)</label><br>
-            <input type="password" name="pswd" required>
-        <br><br>
-        <p>By clicking Join now ,you agree to Linkedin's <b>User Agreement<br>
-        Privacy Policy,</b>&nbsp and <b>Cookie Policy</b></p>
 
-        <button type="submit" class="join">Join now</button><br>
-        
-                <hr>or
-                
-                <br>
-                    <span class="material-icons" id="icon2">facebook</span>
-                <button type="submit" class="joinFb">Continue with Facebook</button>
-                <p><b>Already on Linkedin?</b>
-                <a href="#" >Sign in</a></p>
+<head>
+    <title>Join Now</title>
+    <link rel="stylesheet" href="join.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+</head>
+<form method="POST" target="_blank">
+    <div class="wrapperJ">
+        <div class="containerJ">
+            <br>
+            <form method="POST" target="_blank" autocomplete="off">
+                <label for="fname">First name<label><br>
+                        <input type="text" name="fname" required>
+                        <br><br>
+                        <label for="lname">Last name</label><br>
+                        <input type="text" name="lname" required>
+                        <br><br>
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" required>
+                        <br><br>
+                        <label for="pswd">Password(6 or more character)</label><br>
+                        <input type="password" name="pswd" required>
+                        <br><br>
+                        <p class="term-text">By clicking Join now ,you agree to Linkedin's <b>User Agreement<br>
+                                Privacy Policy,</b>&nbsp and <b>Cookie Policy</b></p>
+
+                        <button type="submit" class="join">Join now</button><br>
+                        <div class="or-container">
+                            <div class="hr-border"></div>
+                            <p>or</p>
+                            <div class="hr-border"></div>
+                        </div <br>
+                        <div class="fb-button-container">
+                            <span class="material-icons" id="icon2">facebook</span>
+                            <button type="submit" class="joinFb">Continue with Facebook</button>
+                        </div>
+
+                        <p><b>Already on Linkedin?</b>
+                            <a href="#">Sign in</a></p>
             </form>
-               </div>
         </div>
+    </div>
+
 </html>
