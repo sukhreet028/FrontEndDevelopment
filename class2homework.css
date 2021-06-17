@@ -51,13 +51,34 @@
   padding-top: 22px;
   /* background-color: yellow;   */
 }
-.list > a:hover {
+.list a:hover {
   color: teal;
   cursor: pointer;
 }
 nav {
   padding-top: 8px;
   text-align: right;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 0px 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-right: 2px solid black;
+  border-radius: 2px;
+  padding-right: 5px;
+  padding: 0px 35px 0px 0px;
+  font-size: 15px;
+}
+.contactList {
+  display: none;
 }
 nav ul li:hover .contactList {
   display: block;
@@ -66,15 +87,7 @@ nav ul li:hover .contactList {
   margin-top: 10px;
   margin-left: -30px;
 }
-
-.contactC:hover .contactList {
-  display: block;
-}
-/* nav > ul > li:last-child:hover .contactList {
-  display: block;
-  /* position: absolute; } */
-
-/* nav ul li:hover .contactList ul {
+nav ul li:hover .contactList ul {
   display: block;
 }
 /* nav ul li:hover .contactList ul li{ */
@@ -425,20 +438,20 @@ aside {
 /*FOOTERRRRRRRR
 .sign-up
 {
-    height:600px;
-    width: 100%; 
+  height:600px;
+  width: 100%; 
 }*/
 .signUp-container {
   height: 400px;
   width: 88%;
-  margin: 1px auto;
+  margin: 1px auto 0px;
   background-color: black;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 150px;
   padding: 15px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 .signUp1 {
   width: 25%;
@@ -468,8 +481,13 @@ aside {
   width: 40%;
   height: 300px;
 }
+.signUp4 h3 {
+  padding-left: 15px;
+}
+
 .signUp4-icon {
   color: white;
+  display: flex;
 }
 .fa {
   color: white;
@@ -484,10 +502,24 @@ aside {
   background-color: black;
   color: white;
 }
+
+.sinput:focus {
+  border: none;
+}
 .signbtn {
   background-color: red;
   width: 90px;
   height: 35px;
   color: white;
   border: none;
+}
+
+
+.footer-border {
+  height: 50px;
+  width: 88%;
+  padding:0px 15px;
+  background-color: black;
+  margin: auto;
+  border-top: 1px solid grey;
 }
