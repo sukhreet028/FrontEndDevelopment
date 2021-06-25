@@ -64,3 +64,7 @@ button:hover
 cursor: pointer;
 background-color: #4545fd;
 }
+
+div .current {
+    color: brown;
+}

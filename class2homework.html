@@ -4,6 +4,7 @@
     <title>class two homework</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="class2homework.css">
+    <link rel="stylesheet" href="grid-style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,7 +24,7 @@
                 <div class="slogan">Your <b>Slogan Here</b></div>
                 <div class="list">
                     <nav>
-                        <ul>
+                        <ul class="ulList">
                             <li><a href="home.html">home</a></li>
                             <li><a href="#">product</a></li>
                             <li><a href="#">news</a></li>
@@ -40,16 +41,27 @@
 
                             </li>
                         </ul>
+                        <div class="menu-button-container">
+                            <button type="button" class="menu-button">menu</button>
+                            <div class="contactList">
+                                <ul>
+
+                                    <li><a href="login.html">Log in</a></li>
+                                    <li><a href="SignUp.html">Sign Up</a></li>
+                                    <li><a href="join.html">Join now</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
             </div>
 
             <div class="body0">
-                <div class="body1">
+                <div class="body1 col-lg-5 col-md-12">
                     <p>SAMPLE TEXT</p>
                     <img src="./img/web.jpg" alt="web" height="182px" width="272">
                 </div>
-                <div class="body2">
+                <div class="body2 col-lg-7 col-md-12">
                     <div class="para">
                         <h2>Lorem ipsum dolor sit amet,<br>
                             consectetur adipisicing elit. </h2>
