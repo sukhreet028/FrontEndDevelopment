@@ -7,7 +7,13 @@
     height:auto;
     width: 100%;
     background-color:rgb(228, 226, 226);
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
 }
+/* @media screen {max-width:700px){ 
+  .wrapper{
+    grid-template-columns: ;: repeat(3,1fr);
+  }*/
 .header{
     height: 18px;
     width: 100%;
@@ -49,52 +55,80 @@ width: 33.3%;
 .list{
     width: 60%;
     padding-top: 22px;
+   position:relative;
    /* background-color: yellow;   */
+}
+.list  ul{
+  list-style: none;
+ 
 }
 .list a:hover { 
      color: teal; 
      cursor: pointer; 
 } 
 nav {
-    padding-top: 8px;
-    text-align: right;
-  }
+  padding-top: 8px;
+  text-align: right;
+}
 nav ul {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+}
 nav ul li {
-    list-style-type: none;
-    padding: 0px 20px;
-  }
+  list-style-type: none;
+  padding: 0px 20px;
+}
 nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    border-right: 2px solid black;
-    border-radius: 2px;
-    padding-right:5px;
-    padding:0px 35px 0px 0px ;
-    font-size: 15px;
-  }
-.contactList{
-  display: none;
-}
-nav ul li:hover .contactList{
-   display: block; 
-  position: relative;  
-  background-color: white;
-  margin-top: 10px;
-  margin-left: -30px;
-}
-nav ul li:hover .contactList ul{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  border-right: 2px solid black;
+  border-radius: 2px;
+  padding-right: 5px;
+  padding: 0px 35px 0px 0px;
+  font-size: 15px;
   display: block;
 }
-/* nav ul li:hover .contactList ul li{ */
-  /* width: 120px; */
-  /* border: none; */
-  /* padding: 5px; */
-  /* border: 2px solid black; */
+/* nav ul li :nth-last-child(2) { */
+  /* border:none; */
+/* } */
+.contactList {
+  position:relative;
+  display: none; 
+}
+.contactList ul{
+  position: absolute;
+  background-color:white;
+  /* margin-top: 10px; */
+  height:150px;
+  width: 180px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  flex-direction: column;
+  border-radius:5px;
+  margin-left:-45px;
+  border: none;
+}
+.contactList ul li:hover{
+  background-color:rgb(228, 226, 226);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactList ul li a{
+  border:none;
+}
+.list ul li:hover .contactList{
+  display:block;
+  position: absolute;
+}
+/* nav .List li:hover.contactList li{  */
+  /* display: block; */
 /* } */
 .body0{
     height:350px;
@@ -173,6 +207,8 @@ nav ul li:hover .contactList ul{
   }
 .quickContact{
   width: 40%;
+ 
+ 
   /* background-color: blanchedalmond; */
   color:white;
 }
@@ -180,8 +216,30 @@ nav ul li:hover .contactList ul{
 /* font-size: 10px; */
 /* padding-left: 25px; */
 /* } */
+.conNum{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-around;
+}
+.qContact{
+  /* background-color: red; */
+  width: 10%;
+  height: 30px;
+  margin-left: 40px;
+ 
+}
+.number{
+  /* background-color: rgb(10, 240, 10); */
+  width: 60%;
+  height:30px ;
+  font-size: 8px;
+  padding-top: 5px;
+}
 .pass-word{
-  width: 30%;
+  width: 35%;
   /* background-color: blue; */
   color:white;
 }
@@ -197,7 +255,16 @@ nav ul li:hover .contactList ul{
     justify-content: space-between;
     border:2px solid black;
     padding-top: 45px;
+    /* display: grid; */
+    /* grid-template-rows: 1fr; */
   }
+  /* @media screen and (max-width:700px){ */
+    /* .lowerBody{ */
+      /* grid-template-rows:repeat (2,1fr); */
+    /* } */
+  /* } */
+/*      */
+  
   .lowerBody1
   {
     height:550px ;
@@ -351,15 +418,17 @@ cursor: pointer;
    margin-top: 10px; 
 } 
  #bttn10{
-  height:20px;
-   width: 120px; 
-background-color: #0000ff;
- border-radius: 10px; 
-} 
-#bttn10:hover{ 
+  height: 27px;
+  width: 120px;
+  background-color: #0000ff;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+}
+/* #bttn10:hover{  
    color:white; 
   cursor: pointer; 
-} 
+} */
 .lowerBody3
 {
   height:550px ;
@@ -452,14 +521,14 @@ cursor: pointer;
 .signUp-container{
     height: 400px;
     width: 88%;
-    margin: 1px auto;
+    margin: 1px auto 0px;
     background-color:black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
      padding-top: 150px;
      padding: 15px;
-     border:1px solid white;
+     /* border:1px solid white; */
 }
 .signUp1{
     width: 25%;
@@ -471,7 +540,7 @@ cursor: pointer;
 }
 .signUp1 h1{ 
 font-family: 'Roboto', sans-serif; 
- font-family: 'Wallpoet', cursive; 
+/* font-family: 'Wallpoet', cursive;   */
 }
 .signUp2{
 width: 15%;
@@ -489,8 +558,15 @@ color:white;
 width: 40%;
  height: 300px;
 }
+.signUp4 h3 {
+  padding-left: 15px;
+  display: flex;
+
+}
 .signUp4-icon{
 color: white;
+display: flex;
+
 }
 .fa{
 color:white;
@@ -511,4 +587,12 @@ width: 90px;
 height: 35px;
 color:white;
 border: none; 
+}
+.footer-border {
+  height: 50px;
+  width: 88%;
+  padding:0px 15px;
+  background-color: black;
+  margin: auto;
+  border-top: 1px solid grey;
 }

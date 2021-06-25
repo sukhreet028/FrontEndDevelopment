@@ -3,38 +3,77 @@
   height: 100vh;
   background-color: rgb(33,171,205);
   position: fixed;
+  font-family: 'Nunito', sans-serif;
 }
 .containerJ{
-  width:35%;
-  height: 500px;
+  width:315px;
+  height: 530px;
   background-color: lightgray;
-  margin: 80px auto;
-  padding-left: 30px;
-  color: rgb(14, 13, 13);
+  margin: 40px auto;
+  padding:0px 30px;
+ color:rgb(85,85,85);
 }
 input{
+  padding-top: 10px;
   width: 310px;
 }
-.join{
-  width: 300px;
-  height: 30px;
-  border: none;
-  border-radius: 3px;
-  background-color: rgb(15,82,186);
-  color: white;
+.or-container {
+  width: 295px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.or-container p {
+  width: 93px;
+  margin: 15px auto;
+}
+
+.hr-border {
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+}
+
+.fb-button-container {
+  position: relative;
+}
+
+#icon2 { 
+  position: absolute; 
+  left: 1px;
+  color: #fff; 
+} 
+ .term-text { 
+ font-size: 15px; 
+  /* text-align: center;  */
+ padding-bottom: 14px; 
+
+ } 
+ .term-text b{
+   color:black;
+ }
+ .join{ 
+  width: 300px; 
+   height:30px; 
+  border: none; 
+  border-radius: 3px; 
+  background-color: rgb(15,82,186);
+ color: white; 
+ } 
 .joinFb{
   width: 300px;
   height: 25px;
   border: none;
   border-radius: 3px;
-  background-color: rgb(15,82,186);
   color: white;
   background-color: rgb(35,41,122);
 }
-.fa{
-  padding-left:30px;
-  padding-top: 10px;
-  color: white;
-
+.bottom-text {
+  text-align: center;
+  color:black;
+  /* margin-bottom: 5px; */
+}
+.bottom-text a{
+  text-decoration: none;
 }
