@@ -49,7 +49,11 @@
 .list {
   width: 60%;
   padding-top: 22px;
+  position: relative;
   /* background-color: yellow;   */
+}
+.list ul {
+  list-style: none;
 }
 .list a:hover {
   color: teal;
@@ -62,6 +66,7 @@ nav {
 nav ul {
   display: flex;
   flex-direction: row;
+  position: absolute;
 }
 nav ul li {
   list-style-type: none;
@@ -76,33 +81,141 @@ nav ul li a {
   padding-right: 5px;
   padding: 0px 35px 0px 0px;
   font-size: 15px;
+  display: block;
 }
+@media (max-width: 800px) {
+  .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px;
+  }
+  /* nav { */
+  /* position: relative; */
+  /* } */
+  .header {
+    position: relative;
+  }
+  .menuIcon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: block;
+    cursor: pointer;
+  }
+  .nav-wrapper {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+  }
+  .ulList {
+    display: none;
+    position: absolute;
+    background-color: rgb(144, 150, 150);
+    height: 150px;
+    width: 130px;
+    top: 20px;
+    right: 2px;
+    /* margin: -29px 0px 0px 300px; */
+    /* display: none; */
+    /* display: inline-block; */
+    /* justify-content:space-around; */
+    /* align-items:center; */
+    /* flex-direction:column; */
+  }
+  nav ul li a {
+    border: none;
+  }
+
+  .nav-wrapper:hover .ulList {
+    display: inline-block !important;
+  }
+}
+
+/* .menu-button { */
+/* height: 50px; */
+/* width: 80px; */
+/* font-size: 13px; */
+/* background-color: blanchedalmond; */
+/* display: none; */
+/* border: 1px solid black; */
+/* margin-left: 220px; */
+/* } */
+
+/* @media(max-width: 800px) { */
+/* .menu-button { */
+/* display:block !important; */
+/* } */
+/* }  */
+/*  */
+/* @media(max-width: 800px) */
+/* { */
+/* nav ul { */
+/* display: none; */
+/* } */
+/* } */
+
+/* nav ul li :nth-last-child(2) { */
+/* border:none; */
+/* } */
 .contactList {
+  position: relative;
   display: none;
 }
-nav ul li:hover .contactList {
-  display: block;
-  position: relative;
+.contactList ul {
+  position: absolute;
   background-color: white;
-  margin-top: 10px;
-  margin-left: -30px;
+  /* margin-top: 10px; */
+  height: 150px;
+  width: 180px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-left: -45px;
+  border: none;
 }
-nav ul li:hover .contactList ul {
+.contactList ul li:hover {
+  background-color: rgb(228, 226, 226);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactList ul li a {
+  border: none;
+}
+.list ul li:hover .contactList {
   display: block;
+  position: absolute;
 }
-/* nav ul li:hover .contactList ul li{ */
-/* width: 120px; */
-/* border: none; */
-/* padding: 5px; */
-/* border: 2px solid black; */
+
+.menu-button-container:hover .contactList {
+  display: block;
+  position: absolute;
+}
+/* nav .List li:hover.contactList li{  */
+/* display: block; */
 /* } */
 .body0 {
-  height: 350px;
-  width: 100%;
+  /* height: 350px; */
+  width: calc(100% - 4px);
   background-color: white;
   display: flex;
   flex-direction: row;
   border: 2px solid black;
+}
+@media (max-width: 800px) {
+  .body0 {
+    flex-direction: column;
+  }
+
+  .body2 > h2 {
+    font-size: 16px;
+  }
 }
 .body1 {
   height: 350px;
@@ -121,23 +234,31 @@ nav ul li:hover .contactList ul {
   font-size: 25px;
 }
 .body2 {
+  overflow: auto;
   height: 350px;
-  width: 70%;
+  width: 60%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 30px;
+  box-sizing: border-box;
 }
 .para {
-  height: 280px;
-  width: 650px;
+  height: auto;
+  padding: 0px 32px;
   text-align: center;
 }
 .para p {
   text-align: left;
   font-size: 15px;
 }
+
+@media (max-width: 800px) {
+  .para p {
+    font-size: 12px;
+  }
+}
+
 aside {
   height: 60px;
   width: 330px;
@@ -145,9 +266,12 @@ aside {
   text-align: left;
 }
 .buton {
-  height: 100px;
-  width: 500px;
-  text-align: right;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  padding-right: 33px;
+  box-sizing: border-box;
+  /* width: 500px; */
   /* background-color:rgb(40, 10, 150); */
 }
 .buton button {
@@ -162,16 +286,23 @@ aside {
   cursor: pointer;
 }
 .contact {
-  height: 70px;
+  /* height: 70px; */
   width: 90%;
   margin: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
+  overflow: scroll;
+}
+@media (max-width: 800px) {
+  .contact {
+    flex-direction: row;
+  }
 }
 .quickContact {
   width: 40%;
+
   /* background-color: blanchedalmond; */
   color: white;
 }
@@ -179,16 +310,49 @@ aside {
 /* font-size: 10px; */
 /* padding-left: 25px; */
 /* } */
+.conNum {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-around;
+  overflow: auto;
+}
+.qContact {
+  /* background-color: red; */
+  width: 10%;
+  height: 30px;
+  margin-left: 40px;
+}
+.quickContact fa fa-phone-square {
+  font-size: 40px;
+}
+.number {
+  /* background-color: rgb(10, 240, 10); */
+  width: 60%;
+  height: 30px;
+  font-size: 8px;
+  padding-top: 5px;
+}
 .pass-word {
-  width: 30%;
+  width: 40%;
   /* background-color: blue; */
   color: white;
 }
-.pass-word form {
-  margin-left: 100px;
+.pass-icon-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.pass-input-container {
+  margin-bottom: 19px;
+  padding-right: 7px;
 }
 .lowerBody {
-  height: 550px;
+  /* height:550px; */
   width: 100%;
   background-color: white;
   display: flex;
@@ -196,6 +360,12 @@ aside {
   justify-content: space-between;
   border: 2px solid black;
   padding-top: 45px;
+  box-sizing: border-box;
+}
+@media (max-width: 800px) {
+  .lowerBody {
+    flex-direction: column;
+  }
 }
 .lowerBody1 {
   height: 550px;
@@ -346,15 +516,17 @@ aside {
   margin-top: 10px;
 }
 #bttn10 {
-  height: 20px;
+  height: 27px;
   width: 120px;
   background-color: #0000ff;
   border-radius: 10px;
-}
-#bttn10:hover {
   color: white;
-  cursor: pointer;
+  font-size: 12px;
 }
+/* #bttn10:hover{  
+   color:white; 
+  cursor: pointer; 
+} */
 .lowerBody3 {
   height: 550px;
   width: 30%;
@@ -442,34 +614,53 @@ aside {
   width: 100%; 
 }*/
 .signUp-container {
-  height: 400px;
+  height: auto;
   width: 88%;
   margin: 1px auto 0px;
   background-color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* justify-content: space-around; */
   padding-top: 150px;
   padding: 15px;
-  /* border: 1px solid white; */
+  /* border:1px solid white; */
 }
+@media (max-width: 800px) {
+  .signUp-container {
+    display: block;
+    width: 100%;
+  }
+  .footer-border {
+    width: 100% !important;
+  }
+}
+/* @media(max-width:800px){ */
+/* .signUp-container{ */
+/* flex-direction: row; */
+/* } */
+/* } */
 .signUp1 {
   width: 25%;
   height: 300px;
   /* background-color: green;  */
   /* padding: 0%; */
   color: white;
-  margin-left: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  display: block;
+  float: left;
 }
 .signUp1 h1 {
   font-family: 'Roboto', sans-serif;
-  font-family: 'Wallpoet', cursive;
+  /* font-family: 'Wallpoet', cursive;   */
 }
 .signUp2 {
   width: 15%;
   height: 300px;
   background-color: black;
   font-family: 'Roboto', sans-serif;
+  display: block;
+  float: left;
 }
 .signUp2 h4 {
   color: #868b59;
@@ -478,13 +669,17 @@ aside {
   color: white;
 }
 .signUp4 {
-  width: 40%;
+  width: 100%;
   height: 300px;
+  display: flex;
+}
+.email-icons {
+  float: left;
 }
 .signUp4 h3 {
-  padding-left: 15px;
+  padding-left: 15px; /*flex*/
+  font-size: 15px;
 }
-
 .signUp4-icon {
   color: white;
   display: flex;
@@ -494,31 +689,49 @@ aside {
   padding-right: 10px;
 }
 .sinput {
+  display: block;
   height: 30px;
   width: 250px;
   border: black;
-  margin-top: 50px;
   border-bottom: 2px solid gray;
   background-color: black;
   color: white;
 }
 
+@media(max-width: 800px) {
+
+  .signUp4 {
+    height: auto !important;
+  }
+
+  .email-input-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 132px;
+    width: 100%;
+    margin: 0px 15px;
+  }
+
+  .sigput {
+    margin-top: 50px;
+  }
+}
 .sinput:focus {
   border: none;
 }
 .signbtn {
+  display: block;
   background-color: red;
   width: 90px;
   height: 35px;
   color: white;
   border: none;
 }
-
-
 .footer-border {
   height: 50px;
   width: 88%;
-  padding:0px 15px;
+  padding: 0px 15px;
   background-color: black;
   margin: auto;
   border-top: 1px solid grey;
