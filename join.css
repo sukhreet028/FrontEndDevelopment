@@ -15,7 +15,7 @@
   width: 310px;
   height: 500px;
   background-color: lightgray;
-  margin: 80px auto;
+  margin: 40px auto;
   padding: 0px 30px;
   color: rgb(14, 13, 13);
 }
@@ -130,6 +130,13 @@ input {
   display: flex;
   align-items: center;
   font-size: 25px;
+}
+@media(max-width:800px)
+{
+  .loginContainer1{
+    display: grid;
+    grid-template-columns:70% 8% 8%;
+  }
 }
 .scratch {
   width: 92%;
