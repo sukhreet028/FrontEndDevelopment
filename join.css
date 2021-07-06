@@ -135,21 +135,22 @@ input {
 {
   .loginContainer1{
     display: grid;
-    grid-template-columns:70% 8% 8%;
+    grid-template-columns:50% 25% 25%;
   }
 }
 .scratch {
-  width: 92%;
+  /* width: 92%; */
   padding-left: 15px;
   /* background-color: hotpink; */
 }
 .sign-up {
-  width: 8%;
+  /* width: 8%; */
+  padding-right: 20px;
   /* background-color: rgb(17, 17, 17); */
   /* color:rgb(22, 20, 20) */
 }
 .log-in {
-  width: 8%;
+  /* width: 8%; */
 }
 a {
   text-decoration: none;
