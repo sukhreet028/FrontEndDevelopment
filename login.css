@@ -14,13 +14,6 @@
    font-size: 25px;
    
 }
-@media(max-width:800px)
-{
-  .loginContainer{
-    display: grid;
-    grid-template-columns:70% 8% 8%;
-  }
-}
 .login{
     margin-left: 30%;
 }
