@@ -52,20 +52,21 @@ nav ul {
   padding: 0px;
   margin: 0px;
   display: flex;
+  /* flex-direction: column; */
   width: 100%;
   height: 100%;
   align-items: center;
 }
-ul li {
+nav ul li {
   margin-left: 35px;
   /* float: left; */
 }
-ul li a {
+nav ul li a {
   text-decoration: none;
   color: blanchedalmond;
   font-size: 15px;
   text-transform: uppercase;
-  /* display: block; */
+  display: block;
   /* margin-top: 10px; */
 }
 nav ul li a:hover {
@@ -90,45 +91,58 @@ nav ul li a:hover {
 }
 
 @media (max-width: 800px) {
-    .nav-wrapper {
-        position: absolute;
-        right: 16px;
-        top: 23px;
-      }
-  .line {
+   .line {
     width: 25px;
     height: 3px;
     /* background: white; */
     margin: 3px;
   }
-  .menuIcon {
-    position: absolute;
+  .list{
+    position: relative;
+  }
+  .nav-wrapper {
+    position:absolute;
     right: 16px;
     top: 23px;
-    display: inline-block;
+  }
+  .menuIcon {
+    position:absolute;
+    right: 16px;
+    top: 0px;
+    display:block;
     cursor: pointer;
   }
   .nav-list {
+    position:absolute;
+    display:none;
+    right: -15px;
+    top: 16px;
+    margin-top: 2px;
+    padding: 15px;
+  height: 100px;
+  width: 120px;
+    background-color: rgb(17, 16, 17);
+  }
+  nav ul{
     position: absolute;
-    display: none;
-    right: 16px;
-    top: 40px;
+    display: flex;
+  flex-direction: column;
   }
-
-  nav ul {
-      flex-direction: column;
+  /* nav ul li:hover{ */
+    /* height: 20px; */
+    /* width: 120px; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* background-color:rgb(241, 237, 241); */
+    /* justify-content: center; */
+    /* align-items: center; */
+  /* } */
+  nav ul li a{
+    border: none;
   }
-  /* .list {
-      display: none;
-      position: absolute;
-      background-color: rgb(144, 150, 150);
-      height: 100px;
-      width: 100px;
-      top: 20px;
-      right: 2px;
-    } */
-  .nav-wrapper:hover .nav-list {
-    display: inline-block;
+  .list:hover .nav-list{
+    display:inline-block !important;
+    /* position: absolute; */
   }
 }
 
@@ -227,6 +241,9 @@ nav ul li a:hover {
   .row-button {
     text-align: center;
   }
+  .upper-part-row6{
+    margin-bottom: 116px
+}
 }
 /* .upper-part-row1{ */
 .row1-img {
@@ -304,7 +321,9 @@ nav ul li a:hover {
   border-bottom: 15px solid yellow;
   font-size: 20px;
 }
-/* .lower-part-row3{ */
+.upper-part-row6{
+    margin-bottom:0px
+}
 .row6-img {
   height: 220px;
   background-image: url(./Img/row6-img.jpg);
