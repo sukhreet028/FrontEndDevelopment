@@ -1,0 +1,19 @@
+body{
+    background-color: cornsilk;
+}
+.box{
+height:200px;
+width: 200px;
+border: 2px solid black;
+transition-duration: 2s ,2s;
+transition-property: rotate,transform;
+position: relative;
+top:200px;
+right:-480px;
+}
+.box:hover{
+    background-color: black;
+    border: 3px solid rgb(201, 223, 9);
+    transform: rotate(45deg);
+    width: 180px;
+}

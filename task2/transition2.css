@@ -1,0 +1,36 @@
+body{
+    background-color: cornsilk;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.box{
+height:200px;
+width: 200px;
+border: 2px solid black;
+transition-duration: 2s ,1s;
+transition-property: rotate , width;
+position: relative;
+top:200px;
+right:-480px;
+}
+.box:hover{
+    background-color: black;
+    border: 3px solid rgb(201, 223, 9);
+    transform: rotate(45deg);
+    width: 180px;
+}
+
+/* .box1{ */
+    /* height:200px; */
+    /* width: 200px; */
+    /* background-color: rgb(7, 7, 7); */
+    /* border: 2px solid black; */
+    /* } */
+/* .box1:hover{ */
+    /* background-color: cornsilk; */
+    /* border: 2px solid black; */
+/*      */
+/* } */
