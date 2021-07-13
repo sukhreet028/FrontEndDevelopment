@@ -1,0 +1,27 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+}
+.container{
+   display: flex;
+   align-items:stretch;
+}
+.container div{
+    border: 2px solid rgb(8, 8, 8);
+}
+.first{
+    color:black;
+   flex:1;
+   order: 3;
+   flex-basis: 10%;
+}
+.second{
+    color:brown;
+    flex: 2;
+    flex-basis: 15%;
+}
+.third{
+    color:blue;
+    flex: 2;
+    flex-basis: 5%;
+}

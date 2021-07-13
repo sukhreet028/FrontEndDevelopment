@@ -104,6 +104,7 @@ nav ul li a:hover {
     position:absolute;
     right: 16px;
     top: 23px;
+    z-index: 1;
   }
   .menuIcon {
     position:absolute;
@@ -130,15 +131,17 @@ nav ul li a:hover {
   }
   /* nav ul li:hover{ */
     /* height: 20px; */
-    /* width: 120px; */
+    /* width: 100px; */
     /* display: flex; */
     /* flex-direction: column; */
     /* background-color:rgb(241, 237, 241); */
+    /* float: left; */
     /* justify-content: center; */
     /* align-items: center; */
   /* } */
   nav ul li a{
     border: none;
+    float: left;
   }
   .list:hover .nav-list{
     display:inline-block !important;
