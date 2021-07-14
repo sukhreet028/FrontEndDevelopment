@@ -61,3 +61,7 @@ button:nth-child(4n+4){
 .empty{
     background-color: black;
 }
+
+.content-wrapper {
+    display: flex;
+}
