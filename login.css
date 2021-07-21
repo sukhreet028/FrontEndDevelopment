@@ -14,6 +14,29 @@
    font-size: 25px;
    
 }
+.login{
+    margin-left: 30%;
+}
+.sukhi{
+    padding: 90px 0px 160px 110px;
+}
+.sukhi button{
+height: 34px;
+width: 180px;
+background-color: rgb(63, 63, 230);
+color:white;
+border-radius: 5px;
+font-size: 18px;
+}
+button:hover
+{
+cursor: pointer;
+background-color: #4545fd;
+}
+
+div .current {
+    color: brown;
+}
 .scratch
 {
     width: 92%;
@@ -42,29 +65,27 @@ color:rgb(169,169,169);
 a:visited{
     color: black;
 }
-.logIn{
-    height: 350px;
-    width: 30%;
-    margin: auto;
-  /* background-color: rgb(185, 12, 12); */
-}
-.sukhi{
-    padding: 90px 0px 160px 110px;
-}
-.sukhi button{
-height: 34px;
-width: 180px;
-background-color: rgb(63, 63, 230);
-color:white;
-border-radius: 5px;
-font-size: 18px;
-}
-button:hover
-{
-cursor: pointer;
-background-color: #4545fd;
-}
 
-div .current {
-    color: brown;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

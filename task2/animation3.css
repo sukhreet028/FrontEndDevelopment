@@ -1,0 +1,46 @@
+.wrappper{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+.container{
+    width: 70%;
+    display:flex;
+    flex-direction: column;
+    /* background-color: cornflowerblue; */
+    margin: auto;
+    border: 3px dashed black;
+}
+.header{
+    height: 30px;
+    text-align: center;
+    animation-name: car;
+    animation-duration: 9s;
+    animation-fill-mode:linear;
+    animation-iteration-count:infinite;
+    position: relative;
+}
+@keyframes car{
+    0%{font-size:25px;left:-400px}
+    50%{text-transform: uppercase; font-size:30px;color:black;left: 360px;}
+    100%{font-size:25px;color:black;left: -400px;}
+}
+.picture{
+    height: 500px;
+    background-color: cadetblue;
+    animation-name: pic;
+    animation-duration: 7s;
+    animation-fill-mode:forwards;
+    background-size:cover;
+    overflow: hidden;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+@keyframes pic{
+    0%{background-image: url(./Img/slide2.jpg);height: 0px;}
+    25%{background-image: url(./Img/slide2.jpg);height: 300px;}
+    50%{background-image: url(./Img/slide2.jpg);height: 500px;}
+    75%{background-image: url(./Img/slide2.jpg);height: 300px;}
+    100%{background-image: url(./Img/slide2.jpg);height: 0px;}  
+}
