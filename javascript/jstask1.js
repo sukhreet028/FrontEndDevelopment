@@ -1,20 +1,42 @@
-let user=['ravneet','singh',30,'punjab',];
+// let user=['ravneet','singh',30,'punjab'];
+let user= [
+    {
+        id: 'fname',
+        value: 'Ravneet' 
+    },
+    {
+        id: 'lname',
+        value: 'singh' 
+    },
+    {
+        id: 'age',
+        value: '30' 
+    },
+    {
+        id: 'birthplace',
+        value: 'Punjab' 
+    }
+]
 // let birthplace ='punjab';
+let filtered = user.filter((data)=> data.id == 'age')
 user.map((data)=>{
-    if(data=='ravneet'){
-        document.getElementById('fname').innerHTML=` firstname of user is :-${user[0]}`;
-    }
-    else if(data=='singh'){
-        document.getElementById('lname').innerHTML=` lastname of user is:-${user[1]}`;
-    }
-    else if(data==30){
-        document.getElementById('age').innerHTML=`age of user is:-${user[2]}`;
-    }
-    else if(data=='punjab'){
-        document.getElementById('birthplace').innerHTML.value='';
-     
-    }
+
+        document.getElementById(data.id).innerHTML= data.value;
+        // document.getElementById('lname').innerHTML=` lastname of user is:-${user[1]}`;
+
+        // document.getElementById('age').innerHTML=`age of user is:-${user[2]}`;
+
+        // document.getElementById('birthplace').innerHTML.value='';
 });
+
+function search() {
+    const value = document.getElementById('textInput').value;
+    const searchResult = user.find((data)=> data.id == value);
+    document.getElementById('result').innerHTML= searchResult.value;
+
+}
+
+//  console.log(user.filter((data)=> data.id !== 'age'));
 
 
 
