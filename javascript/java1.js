@@ -10,15 +10,15 @@ document.getElementById('second-column').innerHTML=`<h1 style='text-align:center
 firstFunction();
 
 
-function secondFunction() {
-    let name1="singh";
-    let name2="kaur";
-    console.log('name1 '+ name1+ ' name2 '+ name2);
-    var fullName= (name1 + "&nbsp;"+ name2);
-    document.write(fullName);
-    document.getElementById(1).style.color = 'green';
-    document.getElementById(2).style.fontSize='30px';
+// function secondFunction() {
+    // let name1="singh";
+    // let name2="kaur";
+    // console.log('name1 '+ name1+ ' name2 '+ name2);
+    // var fullName= (name1 + "&nbsp;"+ name2);
+    // document.write(fullName);
+    // document.getElementById(1).style.color = 'green';
+    // document.getElementById(2).style.fontSize='30px';
     // name2.slice(0,1);
     // document.write(name2);
-};
-secondFunction();
+// };
+// secondFunction();

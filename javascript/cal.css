@@ -12,7 +12,7 @@ body{
     margin: auto;
     position: relative;
     top: 50px;
-    padding-bottom: 10px;
+    padding-bottom                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  : 10px;
     border:2px solid gray;
     
 }
@@ -60,4 +60,8 @@ button:nth-child(4n+4){
 }
 .empty{
     background-color: black;
+}
+
+.content-wrapper {
+    display: flex;
 }
