@@ -1,16 +1,36 @@
 <html>
-    <head>
-        <title>array</title>
-    </head>
-    <body>
+
+<head>
+    <title>array</title>
+    <link rel="stylesheet" href="day1a.css">
+</head>
+
+<body>
+    <div id="form-text" class="form-text">
         <p>first name of user is:-&nbsp;<span id="fname"></span></p>
         <p>lastname of user is:-&nbsp;<span id="lname"></span></p>
         <p>age of user is:-&nbsp;<span id="age"></span></p>
         <p>birthplace of user is:-&nbsp;<span id="birthplace"></span></p>
+    </div>
 
-        <input type="text" id="textInput"/>
-        <button type="button" onclick="search()">search</button>
-          <script src="jstask1.js"></script>
-          <p id="result"></p>
-    </body>
+
+   <div id="sigin-upform" class="sigin-upform">
+    <input type="text" placeholder="first name" id="firstName" />
+    <input type="text" placeholder="last name" id="lastName" />
+    <input type="text" placeholder="password" id="pass" />
+    <input type="text" placeholder="dob" id="dob" />
+    <input type="text" placeholder="location" id="location" />
+    <button type="button" onclick="signup()">submit</button>
+   </div>
+
+   
+   <div id="login-form" class="login-form">
+    <input type="text" placeholder="first name" id="LfirstName" />
+    <input type="text" placeholder="password" id="Lpass" />
+    <button type="button" onclick="login()">login</button>
+   </div>
+   <p id="result" style="color: red; text-align: center;"></p>
+    <script src="jstask1.js"></script>
+</body>
+
 </html>
