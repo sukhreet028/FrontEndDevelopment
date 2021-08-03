@@ -18,6 +18,58 @@
 //     }
 // ]
 
+let buttonArray = [
+  {
+    id: 1,
+    name: '1st',
+  },
+  {
+    id: 2,
+    name: '2nd',
+  },
+  {
+    id: 3,
+    name: 'third',
+  },
+  {
+    id: 4,
+    name: '4th',
+  },
+  {
+    id: 5,
+    name: '5th',
+  },
+];
+
+function createButton() {
+  console.log("create function");
+  buttonArray.map((data) => {
+    var button = document.createElement('button');
+    button.innerHTML = data.name;
+    button.id = data.id;
+    button.onclick = () => hide(data.id);
+    document.getElementById('button-container').appendChild(button);
+  })
+}
+function hide(id) {
+  console.log(id);
+  buttonArray.map((data,index)=> {
+    const buttonList = document.getElementById('button-container');
+    const buttonId =  document.getElementById(data.id);
+    buttonList.removeChild(buttonId);
+  });
+  buttonArray =  buttonArray.filter(data => data.id !== id);
+   console.log(buttonArray);
+  createButton();
+  // document.getElementById(id).style.display = "none";
+}
+
+createButton();
+
+// user.map((data)=> console.log(data));
+// const age = user.filter((data)=> data.id !== 'age');
+// console.log(age);
+
 let formData;
 // let birthplace ='punjab';
 // let filtered = user.filter((data)=> data.id == 'age')
@@ -88,10 +140,13 @@ function login() {
         document.getElementById(data.id).innerHTML = data.value;
       });
     } else {
-        document.getElementById('result').innerHTML = 'Password is worng';
-    
-        setTimeout(() => (document.getElementById('result').innerHTML = ''), 3000);
-      }
+      document.getElementById('result').innerHTML = 'Password is worng';
+
+      setTimeout(
+        () => (document.getElementById('result').innerHTML = ''),
+        3000
+      );
+    }
   } else {
     document.getElementById('result').innerHTML = 'Name is not matching';
 
