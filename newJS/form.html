@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up form </title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+    <h1>This is my first JS form</h1>
+    <div class="form" id="form">
+        <p>First Name of Person is:-<span id="fname"></span></p>
+        <p>Last Name of Person is:-<span id="lname"></span></p>
+        <p>Age of Person is:-<span id="age"></span></p>
+        <p>Country of Person is:-<span id="country"></span></p>
+    </div>
+    <div class="sign-up" id="sign-up">
+        <input type="text" placeholder="Enter first name" id="firstName"><br>
+        <input type="text" placeholder="Ener last name" id="lastName"><br>
+        <input type="number" placeholder="Enter your age" id="dob"><br>
+        <input type="text" placeholder="Enter your birthplace" id="birthPlace"><br>
+        <input type="password" placeholder="Enter your password" id="pass"><br>
+        <button type="button" onclick="signup()">Submit</button>
+    </div>
+
+<div class="log-in" id="log-in">
+    <input type="text" placeholder="Enter Name" id="lgname"> <br>
+    <input type="pass" placeholder="Enter Pasword" id="lpass"><br>
+    <button type="button" onclick="login()">Log In</button><br>
+  </div>
+  <p id="result" style="color:violet;"></p>
+ <script src="form.js"></script>
+</body>
+</html>
