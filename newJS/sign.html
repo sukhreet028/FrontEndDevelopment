@@ -1,0 +1,34 @@
+<html>
+    <head>
+    <title>sign up form in javascript</title>
+    <link rel="stylesheet" href="sign.css">
+     </head>
+
+<body>
+    <div id="form-text" class="form-text">
+        <p>first name of user is:-&nbsp;<span id="fname"></span></p>
+        <p>lastname of user is:-&nbsp;<span id="lname"></span></p>
+        <p>age of user is:-&nbsp;<span id="age"></span></p>
+        <p>birthplace of user is:-&nbsp;<span id="birthplace"></span></p>
+    </div>
+
+
+   <div id="sign-upform" class="sign-upform">
+    <input type="text" placeholder="first name" id="firstName" /><br>
+    <input type="text" placeholder="last name" id="lastName" /><br>
+    <input type="password" placeholder="password" id="pass" /><br>
+    <input type="text" placeholder="dob" id="dob" /><br>
+    <input type="text" placeholder="location" id="location" /><br>
+    <button type="button" onclick="signup()">submit</button><br>
+   </div>
+
+
+   <div id="login-form" class="login-form">
+    <input type="text" placeholder="first name" id="LfirstName" />
+    <input type="password" placeholder="password" id="Lpass" />
+    <button type="button" onclick="login()">login</button>
+   </div>
+   <p id="result" style="color: red; text-align: center;"></p>
+   <script src="sign.js"></script> 
+    </body>
+</html> 

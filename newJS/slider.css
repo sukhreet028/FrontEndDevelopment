@@ -1,0 +1,34 @@
+.myslider{
+    margin:50px auto;
+    width: 50%;
+}
+
+button{
+    height: 50px;
+    width: 90px;
+    color: white;
+    background-color: black;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover{
+    background-color: gray;
+}
+img{
+    width: 100%;
+}
+.buttons{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    /* background-color: green;*/
+} 
+.btn1{
+    width: 50%;
+}
+
+.btn2{
+    width: 50%;
+    text-align: right;
+}
