@@ -37,16 +37,18 @@ let myButtons = [
   }
 
 
-  function change(id) {
+  async function change(ourId) {
+    console.log("clickd button id "+ ourId);
     myButtons.map((data,index)=> {
       const buttonList = document.getElementById('button-box');
       const buttonId =  document.getElementById(data.id);
       buttonList.removeChild(buttonId);
     });
-    myButtons =  myButtons.splice(1, 1).data.id == '2';
-    document.getElementById('button-box').style.position='fixed';
-
-    
+    const index = myButtons.findIndex(data => data.id === ourId);
+    const clickedButtonData = myButtons.find(data => data.id === ourId);
+    console.log(clickedButtonData);
+    myButtons.splice(index, 1,);
+    myButtons.splice(1,0, clickedButtonData);
     createButton();
   }
   

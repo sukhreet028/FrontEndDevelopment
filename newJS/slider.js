@@ -15,5 +15,4 @@ return loadImg();
 
 function loadImg(){
     return slider.setAttribute('src','img/' +images[i]);
-
 }
