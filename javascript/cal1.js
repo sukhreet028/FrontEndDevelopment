@@ -4,7 +4,7 @@ const operators = document.querySelectorAll(".operator");
 // buttons=document.querySelectorAll('button');
 // const operatorButtons=document.querySelectorAll('.operator');
 let inputScreenValue="";
-let firstNum=e.target.Value;
+// let firstNum=e.target.Value;
 var result = document.getElementById('result');
 
 operators.forEach(op => {
