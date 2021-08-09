@@ -30,7 +30,6 @@ operators.forEach(op => {
                 inputScreen.Value= inputScreenValue;
             }else{
                 inputScreen.value= result;
-                result=
             }
             
         });
