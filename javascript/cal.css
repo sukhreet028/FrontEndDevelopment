@@ -7,7 +7,7 @@ body{
 }
 #calculator{
     width: 350px;
-    height: 550px;
+    height: 500px;
     background-color:black;
     margin: auto;
     position: relative;
@@ -16,23 +16,24 @@ body{
     border:2px solid gray;
     
 }
-#result{
-    height:130px;
-      display: flex;
-  flex-direction: column;
+#inputScreen{
+    height:60px;
+    width: 350px;
+      /* display: flex; */
+  /* flex-direction: column; */
 }
-#history{
-    height: 30px;
-    text-align:right;
-    font-size: 15px;
-    color: white;
-}
-#output{
-    height: 80px;
-    text-align: right;
+/* #history{ */
+    /* height: 30px; */
+    /* text-align:right; */
+    /* font-size: 15px; */
+    /* color: white; */
+/* } */
+/* #output{ */
+    /* height: 80px; */
+    /* text-align: right; */
     /* background-color: rgb(108, 109, 109); */
-    font-size: 30px;
-}
+    /* font-size: 30px; */
+/* } */
 #keyboard{
     height: 420px;
     /* background-color: rgb(78, 37, 160); */
