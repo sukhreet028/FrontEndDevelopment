@@ -124,14 +124,14 @@ buttons.forEach((btn) => {
 
 
 
-     function text() {
-        setTimeout(function()
-        { 
-            document.getElementById('set1').classList.add('new');
-        }, 2000);
-      }
-      
-      
+    //  function text() {
+        // setTimeout(function()
+        // { 
+            // document.getElementById('set1').classList.add('new');
+        // }, 2000);
+    //   }
+    //   
+    //   
 
    
    
