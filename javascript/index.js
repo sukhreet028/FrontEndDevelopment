@@ -19,24 +19,24 @@ buttons.forEach((btn) => {
 // }
 
 function playDrum(btn) {
-//   if (btn == 'w') {
-//     crash1.play();
-//   } else if (btn == 'a') {
-//     kick1.play();
-//   } else if (btn == 's') {
-//     snare1.play();
-//   } else if (btn == 'd') {
-//     tom1A.play();
-//   } else if (btn == 'j') {
-//     tom2A.play();
-//   } else if (btn == 'k') {
-//     tom3A.play();
-//   } else if (btn == 'l') {
-//     tom4A.play();
-//   } else {
-//     console.log('no music');
-//   }
-console.log(Math.floor(Math.random() * 6) + 1);
+  buttonAnimation(btn);
+  if (btn == 'w') {
+    crash1.play();
+  } else if (btn == 'a') {
+    kick1.play();
+  } else if (btn == 's') {
+    snare1.play();
+  } else if (btn == 'd') {
+    tom1A.play();
+  } else if (btn == 'j') {
+    tom2A.play();
+  } else if (btn == 'k') {
+    tom3A.play();
+  } else if (btn == 'l') {
+    tom4A.play();
+  } else {
+    console.log('no music');
+  }
 }
 
 document.addEventListener('keyup', (e) => {
@@ -51,8 +51,20 @@ document.addEventListener('keyup', (e) => {
   }
 });
 
-function text() {
-  setTimeout(function () {
-    document.getElementById('set1').classList.add('new');
-  }, 2000);
+// function text() {
+//   setTimeout(function () {
+//     document.getElementById('set1').classList.add('new');
+//   }, 2000);
+// }
+
+function buttonAnimation(currentKey) {
+
+  var activeButton = document.getElementById(currentKey);
+
+  activeButton.classList.add("pressed");
+
+  setTimeout(function() {
+    activeButton.classList.remove("pressed");
+  }, 100);
+
 }
