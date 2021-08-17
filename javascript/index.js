@@ -12,7 +12,6 @@ buttons.forEach((btn) => {
     playSound(e.target.innerText);
   });
 });
-
 // const playDrum = (btn)=> playSound(btn);
 
 // function playDrum(btn) {
