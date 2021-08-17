@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(172, 139, 7);
+}
+.box{
+height:200px;
+width: 200px;
+border: 2px solid black;
+/* transition-duration: 2s ,2s; */
+/* transition-property: radius,width; */
+/* transition-timing-function: ease-in; */
+position: relative;
+top:200px;
+right:-480px;
+background-color: black;
+transition: all 1s linear;
+}
+.box:hover{
+
+    border-radius: 50%;
+    width: 180px;
+    transform: rotate(180deg);
+    background-color: tan;
+}
